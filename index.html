@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="survey-page">
+        <h2 class="text-success">Survey Form</h2>
+        <form class="form-horizontal" onsubmit="reloadPage()">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="username">Username</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="username" placeholder="Enter Username" required autocomplete="on">
+                </div>
+            </div>
+            <div class="form-group high-school-grad">
+                <div class="select-month">
+                    <label class="control-label col-sm-2" for="month">Month</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" id="month" name="month" autocomplete="on">
+                            <option value="">Month</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="select-year">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="year">Year</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="year" placeholder="Graduation Year" required autocomplete="on">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Street Address</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="address" placeholder="Enter Address" required autocomplete="on">
+                </div>
+            </div>
+            <div class="form-group address-2">
+                <div class="city">
+                    <label class="control-label col-sm-2" for="pwd">City</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="city" placeholder="Enter City" required autocomplete="on">
+                    </div>
+                </div>
+                <div class="state">
+                    <label class="control-label col-sm-2" for="pwd">State</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="state" placeholder="Enter State" required autocomplete="on">
+                    </div>
+                </div>
+                <div class="zip">
+                    <label class="control-label col-sm-2" for="pwd">Zip</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="zip" placeholder="Enter Zipcode" required autocomplete="on">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Telephone Number</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="telephone" placeholder="Enter Telephone Number" required autocomplete="on">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email" required autocomplete="on">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Date</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="date" autocomplete="on">
+                </div>
+            </div>
+
+            <h5 class="text-success">What do you like most about the campus?</h5>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something"
+                    checked>
+                <label class="form-check-label" for="check1">Students</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                <label class="form-check-label" for="check2">Location</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                <label class="form-check-label" for="check2">Campus</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                <label class="form-check-label" for="check2">Atmosphere</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                <label class="form-check-label" for="check2">Dorms</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+                <label class="form-check-label" for="check2">Sports</label>
+            </div>
+
+            <h5 class="text-success">How did you know about this university?</h5>
+
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                <label class="form-check-label" for="radio1">Friends</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                <label class="form-check-label" for="radio2">Television</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                <label class="form-check-label" for="radio2">Internet</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                <label class="form-check-label" for="radio2">Others</label>
+            </div>
+            <h3 class="text-success">How likely are you to recommend this university to someone</h3>
+            <div class="select-month">
+                <label class="control-label col-sm-2" for="month">Choose the below option:</label>
+                <div class="col-sm-10">
+                    <select class="form-select" id="month" name="month" autocomplete="on">
+                        <option value="01"> VeryLikely</option>
+                        <option value="02">Likely</option>
+                        <option value="03">Unlikely</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="raffle">Raffle (Enter at least ten comma-separated numbers from 1 through 100)</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="raffle" placeholder="e.g., 10,25,30,45,50,60,70,80,90,100" >
+                </div>
+            </div>
+
+            <div class="form-group mt-5">
+                <label for="comment">Other comments:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default submit-btn">Submit</button>
+                    <button type="reset" class="btn btn-secondary cancel-btn">Cancel</button>
+                </div>
+            </div>
+            
+    </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
