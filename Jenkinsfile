@@ -34,8 +34,8 @@ pipeline {
         stage('Deploying') {
             steps {
                 script {
-                    sh "kubectl set image deployment/nodeport-deployment container-0=${registry}:${env.date}"
-                    sh "kubectl set image deployment/loadbalancer-deployment container-0=${registry}:${env.date}"
+                    sh "kubectl set image deployment/ss container-0=${registry}:${env.date}"
+                    sh "kubectl set image deployment/lb container-0=${registry}:${env.date}"
                 }
             }
         }
